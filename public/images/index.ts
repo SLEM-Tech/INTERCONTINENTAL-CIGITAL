@@ -30,9 +30,11 @@ import graphicsImg from "../transco/graphics.png";
 import bedImg from "../transco/bed.png";
 import heroImg from "../cigital/hero-img.png";
 import displayImg from "../cigital/display-img.png";
+import cigitalLogo from "../cigital/cigital-logo.png";
 
 export {
 	banner,
+	cigitalLogo,
 	displayImg,
 	heroImg,
 	bedImg,
