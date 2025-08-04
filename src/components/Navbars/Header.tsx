@@ -259,8 +259,8 @@ const Header = () => {
 				className={`flex slg:flex-col w-full justify-center items-center z-50 transition bg-white drop-shadow-md fixed top-0`}
 			>
 				{/* Desktop */}
-				<div className='hidden slg:grid grid-cols-4 items-center w-full py-1 max-w-[1300px] z-30 px-5 lg:px-2 xl:px-0'>
-					<LogoImage className='w-[100px] lg:w-[120px] col-span-1' />
+				<div className='hidden slg:grid grid-cols-4 items-center w-full py-2 max-w-[1300px] z-30 px-5 lg:px-2 xl:px-0'>
+					<LogoImage className='!w-[40px] lg:!w-[50px] col-span-1' />
 
 					<div className='flex justify-center  items-center w-fit mx-auto gap-12 overflow-hidden h-10 col-span-2'>
 						{headerNavLinks.map((link) => (
@@ -284,21 +284,23 @@ const Header = () => {
 					</div>
 
 					<div className='flex items-center justify-end gap-4 xl:gap-8 col-span-1 w-fit'>
-						<button
-							type='button'
-							className={`flex items-center justify-center size-8 text-white bg-primary rounded-full font-semibold transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring text-xl ${
-								isExpanded ? "fixed right-4 top-4 z-50" : "static"
-							}`}
-							onClick={handleSearchClick}
-							aria-label={isExpanded ? "Close search" : "Open search"}
-						>
-							{isExpanded ? (
-								<AiFillCloseCircle />
-							) : (
-								<FiSearch className='text-sm' />
-							)}
-						</button>
-						<div className='flex gap-2 justify-center items-center'>
+						<div className=''>
+							<button
+								type='button'
+								className={`flex items-center justify-center size-8 text-white bg-primary rounded-full font-semibold transition-all duration-300 hover:bg-primary/90 focus:outline-none focus:ring text-xl ${
+									isExpanded ? "fixed right-4 top-4 z-50" : "static"
+								}`}
+								onClick={handleSearchClick}
+								aria-label={isExpanded ? "Close search" : "Open search"}
+							>
+								{isExpanded ? (
+									<AiFillCloseCircle />
+								) : (
+									<FiSearch className='text-sm' />
+								)}
+							</button>
+						</div>
+						<div className='flex gap-2 justify-center items-center whitespace-nowrap'>
 							{wc_customer_info?.shipping?.address_2 ? (
 								<Picture
 									src={wc_customer_info?.shipping?.address_2}
@@ -381,7 +383,7 @@ const Header = () => {
 								<DropdownTrigger>
 									<button
 										type='button'
-										className='flex items-center gap-1 px-3 py-2 bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primaryColor-400'
+										className='flex items-center gap-1 px-3 py-1 bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primaryColor-200'
 										aria-label='Currency selector'
 									>
 										<span className='font-medium text-gray-800'>
@@ -437,7 +439,10 @@ const Header = () => {
 										<HiShoppingBag className='text-3xl text-black' />
 									</div>
 								)}
-								<span className='truncate text-sm font-semibold w-16 text-black overflow-hidden'>
+								<span
+									title={calculateSubtotal()?.toString()}
+									className='truncate text-sm font-semibold w-16 text-black overflow-hidden'
+								>
 									<FormatMoney2 value={calculateSubtotal()} />
 								</span>
 							</div>
@@ -446,7 +451,7 @@ const Header = () => {
 				</div>
 
 				{/* Mobile */}
-				<div className='flex flex-col items-center w-full slg:hidden px-2 xs:px-4'>
+				<div className='flex flex-col items-center w-full slg:hidden px-2 py-3 xs:px-4'>
 					<div className='grid grid-cols-2'>
 						<div className='flex items-center gap-1'>
 							<div className=''>
@@ -455,7 +460,7 @@ const Header = () => {
 									className='text-2xl text-primary hover:scale-105 transition-[.5]'
 								/>
 							</div>
-							<LogoImage className='rounded-sm !w-[100px] ' />
+							<LogoImage className='!w-[40px] lg:!w-[50px]' />
 						</div>
 
 						<div className='flex gap-2 justify-end items-center cursor-pointer'>
@@ -480,7 +485,7 @@ const Header = () => {
 									<DropdownTrigger>
 										<button
 											type='button'
-											className='flex items-center gap-1 px-3 py-2 bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primaryColor-400'
+											className='flex items-center gap-1 px-3 py-1 bg-white border border-gray-200 rounded-full hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primaryColor-400'
 											aria-label='Currency selector'
 										>
 											<span className='font-medium text-gray-800'>
