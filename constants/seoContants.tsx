@@ -1,8 +1,8 @@
-const websiteUrl = "";
+const websiteUrl = "https://intercontinental-cigital.vercel.app";
 export const websiteName = "Intecontinental Cigital Service Concept Limited";
 
 export const SEODATA = {
-	defaultOGImage: ``,
+	defaultOGImage: `/_next/static/media/cigital-logo.06afa4f6.png`,
 	default: {
 		title: websiteName,
 		description: `This is ${websiteName}`,
