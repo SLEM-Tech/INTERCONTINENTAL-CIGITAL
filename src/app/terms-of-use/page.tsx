@@ -582,8 +582,8 @@ const Page = () => {
 											disruptions exceeding SLA thresholds
 										</li>
 										<li>
-											International compliance failure refunds if services don't
-											meet regulatory requirements
+											International compliance failure refunds if services
+											don&apos;t meet regulatory requirements
 										</li>
 										<li>
 											Global project delivery refunds for milestone failures and
@@ -606,7 +606,7 @@ const Page = () => {
 											cannot be established
 										</li>
 										<li>
-											Platform compatibility refunds for systems that don't
+											Platform compatibility refunds for systems that don&apos;t
 											integrate as specified
 										</li>
 										<li>
@@ -615,7 +615,7 @@ const Page = () => {
 										</li>
 										<li>
 											Performance optimization refunds if cigital solutions
-											don't meet efficiency targets
+											don&apos;t meet efficiency targets
 										</li>
 										<li>
 											Security breach compensation with enhanced protection
@@ -790,7 +790,7 @@ const Page = () => {
 								</li>
 							</ul>
 
-							<div className='mt-6 pt-4 border-t border-gray-200'>
+							{/* <div className='mt-6 pt-4 border-t border-gray-200'>
 								<h4 className='font-semibold text-xs md:text-sm xl:text-base mb-2'>
 									Contact Information
 								</h4>
@@ -804,7 +804,7 @@ const Page = () => {
 									<li>Phone: +234-801-234-5017</li>
 									<li>Website: www.intercigital.com.ng</li>
 								</ul>
-							</div>
+							</div> */}
 						</div>
 					)}
 				</div>
