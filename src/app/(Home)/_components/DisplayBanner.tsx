@@ -13,26 +13,27 @@ const DisplayBanner = () => {
 
 				<div className='space-y-4 sm:space-y-6'>
 					<h2 className='text-2xl sm:text-3xl font-serif font-light tracking-wider leading-tight'>
-						New Cloth <br />
+						Threads Reimagined <br />
 						<span className='text-3xl sm:text-4xl font-medium'>
-							Technologies
+							Future Fashion
 						</span>
 					</h2>
 
 					<div className='border-t border-gray-700 w-12 sm:w-16 my-3 sm:my-4'></div>
 
 					<p className='text-gray-300 leading-relaxed font-serif text-sm sm:text-base'>
-						Mauris vitae ultricies leo integer malesuada. Odio tempor orci
-						dapibus ultrices in. Egestas diam in arcu cursus euismod. Dictum
-						purus viverra accumsan in nisl. Tempor id eu.
+						Where innovative fabrics meet timeless design. Our advanced textiles
+						blend sustainability with luxury, creating pieces that feel as good
+						as they look. Experience clothing engineered for comfort,
+						durability, and effortless style.
 					</p>
 
 					<div className='pt-3 sm:pt-4 border-t border-gray-700'>
 						<p className='text-white font-serif italic text-base sm:text-lg'>
-							Alice W
+							"Dress the future today"
 						</p>
 						<p className='text-gray-400 text-xs sm:text-sm mt-1 tracking-wider'>
-							Alice Autumn, CEO
+							The Style Collective
 						</p>
 					</div>
 				</div>
