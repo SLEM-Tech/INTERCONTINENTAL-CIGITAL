@@ -41,13 +41,13 @@ const AllCategorySection = () => {
 			<section className='flex flex-col-reverse lg:grid grid-cols-1 lg:grid-cols-12 items-center px-3 lg:px-6 gap-6 lg:min-h-screen overflow-hidden max-w-[1256px] mx-auto'>
 				{/* LEFT TEXT CONTENT */}
 				<div className='lg:col-span-6 z-10 text-black space-y-2 lg:space-y-8 h-full text-center lg:text-start flex flex-col justify-center'>
-					<h3 className='text-3xl sm:text-4xl md:text-5xl font-semibold lg:text-7xl tracking-tight leading-tight md:leading-8 max-w-sm lg:max-w-md'>
-						Brand New Collection
+					<h3 className='text-3xl sm:text-4xl md:text-5xl font-semibold lg:text-7xl tracking-tighter leading-tight md:leading-8 max-w-sm lg:max-w-md'>
+						The Modern Wardrobe
 					</h3>
 
 					<p className='text-sm font-extralight lg:font-medium leading-6 text-primary max-w-sm lg:max-w-lg'>
-						Mauris vitae ultricies leo integer malesuada tempor orci dapibus
-						ultrices diam in arcu cursus euismod purus viverra accumsan.
+						Timeless pieces reimagined with contemporary cuts and premium
+						natural fabrics that age beautifully.
 					</p>
 
 					<div className='flex flex-wrap justify-center lg:justify-start items-center gap-y-4 lg:gap-y-0 gap-x-4 lg:gap-x-8'>
