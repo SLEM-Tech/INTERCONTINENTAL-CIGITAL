@@ -30,7 +30,7 @@ const DisplayBanner = () => {
 
 					<div className='pt-3 sm:pt-4 border-t border-gray-700'>
 						<p className='text-white font-serif italic text-base sm:text-lg'>
-							"Dress the future today"
+							&quot;Dress the future today&quot;
 						</p>
 						<p className='text-gray-400 text-xs sm:text-sm mt-1 tracking-wider'>
 							The Style Collective
